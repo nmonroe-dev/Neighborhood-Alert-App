@@ -1,0 +1,9 @@
+POST http://localhost:4006/incident/addComment/675b4aa995c5fc8f387e13d5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTkyZDNiODU4ZTk3NmQ1MzYyMjhiNiIsInVzZXJuYW1lIjoidGVzdHVzZXIiLCJpYXQiOjE3MzQ0MDU4ODQsImV4cCI6MTczNDQ4ODY4NH0.Q9a_LYKa-XbIfy5Rj5OoBYWNPJXW8CeeiOQ_EZOWjb0
+
+{
+  "comment": { 
+    "text": "This is a test comment for the incident."
+  }
+}

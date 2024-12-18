@@ -1,0 +1,84 @@
+/* General Container */
+.home-container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background */
+}
+
+/* Content Area */
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 250px;
+    overflow-y: auto;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #4caf50, #1abc9c); /* Green gradient */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.search-bar-placeholder {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle white overlay */
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    font-style: italic;
+}
+
+/* Incidents Section */
+.incident-section {
+    margin-top: 30px;
+}
+
+.incident-section h2 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.incident-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.incident-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.incident-item strong {
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+.incident-item span {
+    font-size: 1rem;
+    color: #7f8c8d;
+}

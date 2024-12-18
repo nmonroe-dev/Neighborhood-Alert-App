@@ -1,0 +1,85 @@
+.incident-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.incident-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.incident-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.incident-card-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+.status {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.status.active {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.status.resolved {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.incident-card-body {
+    margin-top: 10px;
+}
+
+.incident-card-body p {
+    margin: 8px 0;
+    color: #34495e;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.category,
+.date {
+    display: block;
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    margin-top: 4px;
+    word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .incident-card {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .incident-card-header h3 {
+        font-size: 1rem;
+    }
+
+    .status {
+        font-size: 0.8rem;
+    }
+
+    .incident-card-body p {
+        font-size: 0.8rem;
+    }
+}

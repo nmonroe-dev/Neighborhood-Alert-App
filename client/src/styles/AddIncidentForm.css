@@ -1,0 +1,67 @@
+
+.add-incident-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-incident-container h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.add-incident-container p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.add-incident-container label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+.add-incident-container input,
+.add-incident-container select,
+.add-incident-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #2c3e50;
+}
+
+.add-incident-container textarea {
+    resize: vertical;
+}
+
+.add-incident-container button {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-incident-container button:hover {
+    background-color: #16a085;
+}
+
+.add-incident-container button:active {
+    transform: scale(0.98);
+}
