@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-import "../styles/AddIncidentForm.css"
+import "../styles/AddIncidentForm.css";
 
 function AddIncident() {
     const [title, setTitle] = useState("");
@@ -25,8 +25,10 @@ function AddIncident() {
             setCategory("");
             setZip("");
             setDate("");
+            alert("Incident successfully reported!");
         } catch (error) {
             console.error("Unable to add incident", error);
+            alert("Failed to report the incident. Please try again.");
         }
     };
 

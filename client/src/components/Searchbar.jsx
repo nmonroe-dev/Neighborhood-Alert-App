@@ -1,5 +1,4 @@
-import "../styles/Searchbar.css"
-
+import "../styles/Searchbar.css";
 
 function Searchbar({ handleSubmit, setZip, zip }) {
     return (
@@ -9,7 +8,7 @@ function Searchbar({ handleSubmit, setZip, zip }) {
                     type="number"
                     name="zip"
                     value={zip}
-                    placeholder="Search by zipcode"
+                    placeholder="Zipcode try 76201 or 76266"
                     onChange={(event) => setZip(event.target.value)}
                 />
                 <button type="submit">Search</button>
@@ -19,6 +18,5 @@ function Searchbar({ handleSubmit, setZip, zip }) {
 }
 
 export default Searchbar;
-
 
 

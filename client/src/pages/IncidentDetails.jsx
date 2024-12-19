@@ -10,6 +10,33 @@ function IncidentDetails() {
   const [incident, setIncident] = useState(state?.incident || {});
   const [newComment, setNewComment] = useState("");
 
+
+  const handleStatus = async () => {
+    
+    setIncident((prevIncident) => ({
+      ...prevIncident,
+      status: prevIncident.status === "active" ? "resolved" : "active",
+    }));
+  
+    
+    const updatedStatus = incident.status === "active" ? "resolved" : "active";
+  
+    try {
+      
+      const updateStatus = await axios.put(
+        `http://localhost:4006/incident/updateStatus/${incident._id}`,
+        { status: updatedStatus },
+        {
+          headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
+        }
+      );
+      console.log("Status updated:", updateStatus.data);
+    } catch (error) {
+      console.error("Unable to update status", error);
+    }
+  };
+  
+
   const handleAddComment = async () => {
     if (!newComment.trim()) {
       alert("Comment cannot be empty!");
@@ -103,6 +130,7 @@ function IncidentDetails() {
             <button className="add-comment-button" onClick={handleAddComment}>
               Add Comment
             </button>
+            <button className="add-comment-button" onClick={handleStatus}>Update Status</button>
           </div>
         </div>
       </div>

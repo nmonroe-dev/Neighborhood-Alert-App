@@ -123,4 +123,3 @@ exports.getIncidentId = async (req, res) => {
 };
 
 
-

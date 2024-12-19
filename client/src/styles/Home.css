@@ -4,7 +4,7 @@
     flex-direction: row;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9; /* Light background */
+    background-color: #d6cccc71; /* Light background */
 }
 
 /* Content Area */
@@ -17,7 +17,7 @@
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(to right, #4caf50, #1abc9c); /* Green gradient */
+    background: linear-gradient(to right, #4cacaf, #bc1a1a); /* Green gradient */
     color: white;
     text-align: center;
     padding: 40px 20px;
@@ -35,6 +35,20 @@
 .hero-section p {
     font-size: 1.2rem;
     margin-bottom: 20px;
+}
+ul {
+    list-style-type: none;
+}
+ul li a {
+    text-decoration: none;
+}
+
+/* Search Bar */
+.search-bar {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .search-bar-placeholder {
@@ -57,6 +71,7 @@
     margin-bottom: 15px;
 }
 
+/* Incident List */
 .incident-list {
     list-style-type: none;
     padding: 0;
@@ -81,4 +96,47 @@
 .incident-item span {
     font-size: 1rem;
     color: #7f8c8d;
+}
+
+/* Hover Effects */
+.incident-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .hero-section {
+        padding: 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .incident-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .incident-item {
+        padding: 10px;
+    }
+
+    .incident-item strong {
+        font-size: 1rem;
+    }
+
+    .incident-item span {
+        font-size: 0.9rem;
+    }
 }

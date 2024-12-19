@@ -1,9 +1,10 @@
 import AddIncident from "../components/AddIncidentForm";
 import Navbar from "../components/Sidebar";
+import "../styles/AddIncidentPage.css"; 
 
-function FromPage() {
+function AddIncidentPage() {
     return (
-        <div>
+        <div className="add-incident-page-container">
             <Navbar />
             <div className="content">
                 <AddIncident />
@@ -12,4 +13,4 @@ function FromPage() {
     );
 }
 
-export default FromPage;
+export default AddIncidentPage;

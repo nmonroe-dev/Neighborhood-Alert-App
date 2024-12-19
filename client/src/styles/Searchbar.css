@@ -1,3 +1,4 @@
+/* Searchbar Container */
 .searchbar-container {
     display: flex;
     justify-content: center;
@@ -5,6 +6,7 @@
     margin-top: 20px;
 }
 
+/* Form Styling */
 .searchbar-container form {
     display: flex;
     gap: 10px;
@@ -15,8 +17,9 @@
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Input Field Styling */
 .searchbar-container input {
-    width: 200px;
+    width: 250px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -25,11 +28,13 @@
     transition: all 0.3s ease;
 }
 
+/* Input Field Focus State */
 .searchbar-container input:focus {
     border-color: #3498db;
     box-shadow: 0px 0px 5px rgba(52, 152, 219, 0.5);
 }
 
+/* Button Styling */
 .searchbar-container button {
     padding: 10px 20px;
     background-color: #3498db;
@@ -40,6 +45,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 
 .searchbar-container button:hover {
     background-color: #2980b9;
