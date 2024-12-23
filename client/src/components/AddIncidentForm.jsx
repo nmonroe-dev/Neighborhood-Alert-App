@@ -19,7 +19,7 @@ function AddIncident() {
 
         try {
             console.log(incident);
-            await axios.post("http://localhost:4006/incident/addIncident", incident, config);
+            await axios.post("https://neighborhood-alert-app.onrender.com/incident/addIncident", incident, config);
             setTitle("");
             setDescription("");
             setCategory("");

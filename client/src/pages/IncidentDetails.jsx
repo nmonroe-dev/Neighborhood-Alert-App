@@ -24,7 +24,7 @@ function IncidentDetails() {
     try {
       
       const updateStatus = await axios.put(
-        `http://localhost:4006/incident/updateStatus/${incident._id}`,
+        `https://neighborhood-alert-app.onrender.com/incident/updateStatus/${incident._id}`,
         { status: updatedStatus },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
@@ -45,7 +45,7 @@ function IncidentDetails() {
 
     try {
       const response = await axios.post(
-        `http://localhost:4006/incident/addComment/${incident._id}`,
+        `https://neighborhood-alert-app.onrender.com/incident/addComment/${incident._id}`,
         { comment: { text: newComment } },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
@@ -68,7 +68,7 @@ function IncidentDetails() {
   const handleDeleteComment = async (commentId) => {
     try {
       await axios.delete(
-        `http://localhost:4006/incident/deleteComment/${incident._id}`,
+        `https://neighborhood-alert-app.onrender.com/incident/deleteComment/${incident._id}`,
         {
           data: { commentId },
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },

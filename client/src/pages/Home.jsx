@@ -14,7 +14,7 @@ function Home() {
     event.preventDefault();
     try {
         const response = await axios.get(
-            `http://localhost:4006/incident/getIncident/${zip}`,
+            `https://neighborhood-alert-app.onrender.com/incident/getIncident/${zip}`,
             {
                 headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
             }

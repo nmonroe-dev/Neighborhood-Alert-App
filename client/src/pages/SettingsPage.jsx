@@ -12,7 +12,7 @@ function Settings() {
     const handleUsernameUpdate = async () => {
         try {
             await axios.put(
-                "http://localhost:4006/incident/updateUsername",
+                "https://neighborhood-alert-app.onrender.com/incident/updateUsername",
                 { username },
                 { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
             );
@@ -26,7 +26,7 @@ function Settings() {
     const handlePasswordUpdate = async () => {
         try {
             await axios.put(
-                "http://localhost:4006/incident/updatePassword",
+                "https://neighborhood-alert-app.onrender.com/incident/updatePassword",
                 { currentPassword, newPassword },
                 { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
             );
