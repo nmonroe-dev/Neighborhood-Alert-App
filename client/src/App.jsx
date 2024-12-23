@@ -4,6 +4,7 @@ import LoginPage from "./pages/LoginPage";
 import Home from "./pages/Home";
 import AddIncidentPage from "./pages/AddIncidentPage";
 import IncidentDetails from "./pages/IncidentDetails";
+import Settings from "./pages/SettingsPage";
 import "./index.css";
 
 function App() {
@@ -32,6 +33,14 @@ function App() {
           element={
             <PrivateRoute>
               <IncidentDetails />
+            </PrivateRoute>
+          }
+        />
+          <Route
+          path="/settings"
+          element={
+            <PrivateRoute>
+              <Settings />
             </PrivateRoute>
           }
         />

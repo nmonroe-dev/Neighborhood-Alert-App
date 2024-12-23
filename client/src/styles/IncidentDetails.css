@@ -4,42 +4,45 @@
     font-family: Arial, sans-serif;
     padding: 20px;
     background-color: #f4f6f8; 
+    overflow-x: hidden; 
 }
 
 .incident-details-content {
-    max-width: 800px;
+    max-width: 100%; 
     margin: 0 auto;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 15px; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .incident-title {
-    font-size: 2rem;
+    font-size: 1.5rem; 
     color: #34495e;
     text-align: center;
     margin-bottom: 20px;
-    width: 600px;
-}
+    word-wrap: break-word;
+} 
 
 .incident-info {
     background-color: #f9f9f9;
-    padding: 15px;
+    padding: 10px; 
     border-radius: 8px;
     margin-bottom: 20px;
     line-height: 1.6;
     color: #2c3e50;
+    word-wrap: break-word; 
 }
 
 .incident-info p {
     margin: 5px 0;
+    font-size: 0.9rem; 
 }
 
 .incident-comments {
     margin-top: 20px;
     background-color: #f9f9f9;
-    padding: 15px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -47,7 +50,7 @@
 .incident-comments h2 {
     color: #34495e;
     margin-bottom: 15px;
-    font-size: 1.5rem;
+    font-size: 1.3rem; 
 }
 
 .comments-list {
@@ -58,8 +61,7 @@
 
 .comment-item {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     background-color: #ffffff;
     padding: 10px;
     margin-bottom: 10px;
@@ -73,12 +75,11 @@
 }
 
 .comment-content {
-    flex-grow: 1;
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .comment-text {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #2c3e50;
 }
 
@@ -136,4 +137,32 @@
 
 .delete-icon {
     pointer-events: none;
+}
+
+
+@media (max-width: 768px) {
+    .incident-title {
+        font-size: 1.2rem;
+    }
+
+    .incident-info {
+        padding: 8px;
+    }
+
+    .incident-comments h2 {
+        font-size: 1.2rem;
+    }
+
+    .comment-item {
+        padding: 8px;
+    }
+
+    .add-comment-section textarea {
+        height: 60px;
+    }
+
+    .add-comment-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
 }

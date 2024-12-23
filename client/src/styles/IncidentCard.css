@@ -1,4 +1,4 @@
-/* Incident Card Styling */
+
 .incident-card {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -16,7 +16,6 @@
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); 
 }
 
-/* Card Header */
 .incident-card-header {
     display: flex;
     justify-content: space-between;
@@ -25,13 +24,13 @@
 
 .incident-card-header h3 {
     margin: 0;
-    font-size: 1.4rem; /* Slightly larger for better readability */
-    color: #2c3e50; /* Darker shade for contrast */
-    font-weight: 600; /* Bold for emphasis */
-    text-decoration: none; /* Remove underline */
+    font-size: 1.4rem; 
+    color: #2c3e50; 
+    font-weight: 600; 
+    text-decoration: none; 
 }
 
-/* Status Styling */
+
 .status {
     font-size: 0.9rem;
     padding: 4px 8px;
@@ -50,7 +49,7 @@
     color: #fff;
 }
 
-/* Card Body */
+
 .incident-card-body {
     margin-top: 10px;
 }
@@ -58,12 +57,12 @@
 .incident-card-body p {
     margin: 8px 0;
     color: #34495e;
-    font-size: 1rem; /* Increase for readability */
-    line-height: 1.6; /* Better spacing */
-    text-decoration: none; /* Remove underline */
+    font-size: 1rem; 
+    line-height: 1.6; 
+    text-decoration: none; 
 }
 
-/* Additional Text Styling */
+
 .category,
 .date {
     display: block;
@@ -71,10 +70,10 @@
     color: #7f8c8d;
     margin-top: 4px;
     word-wrap: break-word;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
 }
 
-/* Remove Underline for Links */
+
 .incident-card-header h3,
 .incident-card-body p,
 .category,
@@ -84,10 +83,10 @@
 
 .incident-card a {
     text-decoration: none; 
-    color: inherit; /* Inherit the text color for uniformity */
+    color: inherit; 
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .incident-card {
         padding: 12px;
@@ -96,7 +95,7 @@
     }
 
     .incident-card-header h3 {
-        font-size: 1.2rem; /* Slightly smaller for smaller screens */
+        font-size: 1.2rem; 
     }
 
     .status {

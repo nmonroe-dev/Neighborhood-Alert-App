@@ -8,4 +8,7 @@ route.post("/addIncident", incidentController.addIncident);
 route.put("/updateStatus/:id", incidentController.updateStatus);
 route.post("/addComment/:id", incidentController.addComment);
 route.delete("/deleteComment/:id", incidentController.deleteComment);
+/*route.put("/updateUsername", incidentController.updateUsername);*/
+/*route.put("/updatePassword", incidentController.updatePassword);*/
+
 module.exports = route;

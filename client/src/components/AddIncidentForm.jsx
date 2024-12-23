@@ -28,7 +28,7 @@ function AddIncident() {
             alert("Incident successfully reported!");
         } catch (error) {
             console.error("Unable to add incident", error);
-            alert("Failed to report the incident. Please try again.");
+            alert("Failed to report the incident. Please try again. All fields required.");
         }
     };
 

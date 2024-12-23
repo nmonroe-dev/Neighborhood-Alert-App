@@ -13,17 +13,23 @@ function Home() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.get(
-        `http://localhost:4006/incident/getIncident/${zip}`,
-        {
-          headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
+        const response = await axios.get(
+            `http://localhost:4006/incident/getIncident/${zip}`,
+            {
+                headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
+            }
+        );
+        if (response.data.length === 0) {
+            alert("No incidents found for the entered zip code.");
+        } else {
+            setIncidents(response.data);
         }
-      );
-      setIncidents(response.data);
     } catch (error) {
-      console.error("Unable to fetch incidents", error);
+        console.error("Unable to fetch incidents", error);
+        alert("No incidents found for the entered zip code");
     }
-  };
+};
+
 
   const activeIncidents = incidents.filter(
     (incident) => incident.status === "active"

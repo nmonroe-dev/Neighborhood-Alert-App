@@ -1,4 +1,4 @@
-/* General Sidebar Styles */
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -51,7 +51,7 @@
   font-size: 24px;
 }
 
-/* Hamburger Button */
+
 .hamburger {
   display: none;
   position: absolute;
@@ -69,12 +69,12 @@
   outline: none;
 }
 
-/* Sidebar Hidden by Default on Small Screens */
+
 .sidebar.collapsed {
   transform: translateX(-100%);
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   .sidebar {
     width: 180px;

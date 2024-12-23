@@ -21,6 +21,7 @@ function LoginForm() {
       nav("/home");
     } catch (error) {
       console.error("Unable to login", error);
+      alert("Wrong password or userename ");
     }
   };
 
